@@ -5,7 +5,7 @@ def recursion_trough_arr(current_arr, index = 0, level = 0)
   if index >= current_arr.length - 1
 
     if current_arr[index].is_a?(Array)
-      puts print_dashes(level) + "--" + unicode_symbol("\u25BD") # symbol "corner" for one level deep
+      puts print_dashes(level) + "--" + unicode_symbol("\u25BD") # symbol "corner" for one level deeper
       recursion_trough_arr(current_arr[index], 0, level + 1)
     else
       puts print_dashes(level) + " " + current_arr[index].to_s
