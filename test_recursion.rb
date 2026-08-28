@@ -1,0 +1,41 @@
+arr = [1, 2, 3, [5,6,[8,9,10],7]]
+
+def recursion_trough_arr(current_arr, index, level = 0)
+  # if last element in a row
+  if index >= current_arr.length - 1
+
+    if current_arr[index].is_a?(Array)
+      puts print_dashes(level) + "--" + symbol("\u25BD") # symbol "corner" for one level deep
+      recursion_trough_arr(current_arr[index], 0, level + 1)
+    else
+      puts print_dashes(level) + " " + current_arr[index].to_s
+    end
+
+  else
+
+    # if not last element in a row
+    if current_arr[index].is_a?(Array)
+      puts print_dashes(level) + "--" + symbol("\u25BD") # symbol "corner" for one level deep
+      recursion_trough_arr(current_arr[index], 0, level + 1)
+    else
+      puts print_dashes(level) + " " + current_arr[index].to_s
+      recursion_trough_arr(current_arr, index + 1, level)
+    end
+    
+  end
+end
+
+def print_dashes(level) 
+  dashes = "-"
+  level.times { dashes += "-" }
+  dashes
+end
+
+def symbol(symbol)
+  symbol.encode('utf-8')
+end
+
+recursion_trough_arr(arr, 0, 0)
+
+
+  
