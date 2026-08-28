@@ -1,6 +1,6 @@
 arr = [1, 2, 3, [5,6,[8,9,10],7], 11, [12, 13], 14, 15]
 
-def recursion_trough_arr(current_arr, index, level = 0)
+def recursion_trough_arr(current_arr, index = 0, level = 0)
   # if last element in a row
   if index >= current_arr.length - 1
 
@@ -36,7 +36,7 @@ def unicode_symbol(symbol)
   symbol.encode('utf-8')
 end
 
-recursion_trough_arr(arr, 0, 0)
+recursion_trough_arr(arr)
 
 
   
