@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function add7(number) {
+        return number + 7;
+      }
+      console.log(add7(10));
+
+      function multiply(a, b) {
+        return a * b;
+      }
+      console.log(multiply(2, 3));
+
+      const capitalize = (string) => {
+        const firstLetter = string.charAt(0);
+
+        const firstLetterCap = firstLetter.toUpperCase();
+
+        const remainingLetters = string.slice(1).toLowerCase();
+
+        const capitalizedString = firstLetterCap + remainingLetters;
+
+        return capitalizedString;
+      };
+
+      console.log(capitalize("BlaBla"));
+
+      const lastLetter = (string) => {
+        return string.slice(-1);
+      };
+
+      console.log(lastLetter("BlaBla"));
+    </script>
+  </body>
+</html>
