@@ -1,41 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-      function add7(number) {
-        return number + 7;
-      }
-      console.log(add7(10));
 
-      function multiply(a, b) {
-        return a * b;
-      }
-      console.log(multiply(2, 3));
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-      const capitalize = (string) => {
-        const firstLetter = string.charAt(0);
+<body>
+  <script>
+    function add7(number) {
+      return number + 7;
+    }
+    console.log(add7(10));
 
-        const firstLetterCap = firstLetter.toUpperCase();
+    function multiply(a, b) {
+      return a * b;
+    }
+    console.log(multiply(2, 3));
 
-        const remainingLetters = string.slice(1).toLowerCase();
+    const capitalize = (string) => {
+      const firstLetter = string.charAt(0);
 
-        const capitalizedString = firstLetterCap + remainingLetters;
+      const firstLetterCap = firstLetter.toUpperCase();
 
-        return capitalizedString;
-      };
+      const remainingLetters = string.slice(1).toLowerCase();
 
-      console.log(capitalize("BlaBla"));
+      const capitalizedString = firstLetterCap + remainingLetters;
 
-      const lastLetter = (string) => {
-        return string.slice(-1);
-      };
+      return capitalizedString;
+    };
 
-      console.log(lastLetter("BlaBla"));
-    </script>
-  </body>
+    console.log(capitalize("BlaBla"));
+
+    const lastLetter = (string) => {
+      return string.slice(-1);
+    };
+
+    console.log(lastLetter("BlaBlaBla"));
+  </script>
+</body>
+
 </html>
