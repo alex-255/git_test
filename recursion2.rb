@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # same as test_recursion.rb -- created from scratch
 arr = [1, 2, 3, [5, 6, [8, 9, 10], 7], 11, [12, 13], 14, 15]
 
@@ -6,7 +8,7 @@ def go_through_arr(array, current_index = 0, level = 1)
   # if last item:
   # - if not array show item
   # - if array start function
-  
+
   # if not last item:
   # - if not array start function with index + 1
   # - if array start function
@@ -19,20 +21,20 @@ def go_through_arr(array, current_index = 0, level = 1)
       go_through_arr(array[current_index], 0, level + 1)
     end
   else
-    if array[current_index].is_a?(Array) == false
+    if array[current_index].is_a?(Array) == false # rubocop:disable Style/IfInsideElse
       print dashes(level)
       puts array[current_index]
-      go_through_arr(array, current_index + 1, level)
+      go_through_arr(array, current_index + 1, level) # rubocop:disable Style/IdenticalConditionalBranches
     else
       go_through_arr(array[current_index], 0, level + 1)
-      go_through_arr(array, current_index + 1, level)
+      go_through_arr(array, current_index + 1, level) # rubocop:disable Style/IdenticalConditionalBranches
     end
   end
 end
 
 def dashes(level)
-  dashes = ""
-  level.times {dashes += "-"}
+  dashes = ''
+  level.times { dashes += '-' }
   dashes
 end
 
