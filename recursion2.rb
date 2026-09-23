@@ -1,6 +1,8 @@
+# same as test_recursion.rb -- created from scratch
 arr = [1, 2, 3, [5, 6, [8, 9, 10], 7], 11, [12, 13], 14, 15]
 
 def go_through_arr(array, current_index = 0, level = 1)
+  # PSEUDOCODE:
   # if last item:
   # - if not array show item
   # - if array start function
