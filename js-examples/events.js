@@ -11,3 +11,11 @@ btn2.addEventListener("click", () => {
 btn2.addEventListener("click", function (e) {
   console.log(e);
 });
+
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
