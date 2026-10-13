@@ -84,6 +84,7 @@ footer {
 
 footer p {
   text-align: center;
+  box-shadow: 2px 2px 10px 5px #c4c4c4;
 }
 
 h1,
@@ -120,7 +121,15 @@ ol {
 a {
   text-decoration: underline;
 }
-a:hover, a:focus, a:active, a:visited {
+a:hover,
+a:focus,
+a:active,
+a:visited {
   color: #612f2f;
   text-decoration: none;
+}
+
+.organic ~ li a {
+  color: #aa6666;
+  font-weight: bold;
 }
