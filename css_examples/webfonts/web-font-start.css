@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Halvarson PERSONAL USE PERSONAL USE ONLY";
+  src: url("fonts/HalvarsonPERSONALUSE-PERSONALUSEONLY.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rasley Heights PERSONAL USE";
+  src: url("fonts/RasleyHeightsPERSONALUSE-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* General setup */
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "Halvarson PERSONAL USE PERSONAL USE ONLY", sans-serif;
+}
+
+h2 {
+  font-family: "Halvarson PERSONAL USE PERSONAL USE ONLY", sans-serif;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}

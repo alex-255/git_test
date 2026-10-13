@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Halvarson PERSONAL USE PERSONAL USE ONLY';
+    src: url('HalvarsonPERSONALUSE-PERSONALUSEONLY.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rasley Heights PERSONAL USE';
+    src: url('RasleyHeightsPERSONALUSE-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

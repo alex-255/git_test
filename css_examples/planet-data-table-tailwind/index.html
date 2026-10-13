@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Planet data table</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900 text-slate-100 p-8 font-sans">
+    <h1 class="text-3xl font-bold text-cyan-400 mb-6 text-center">
+      Planet data table
+    </h1>
+    <table class="w-full border-collapse border border-slate-700 text-sm">
+      <caption class="text-2xl font-bold text-cyan-400 mb-6 tracking-wide">
+        Data about the planets of our solar system (Planetary facts taken from
+        <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+          >Nasa's Planetary Fact Sheet - Metric</a
+        >).
+      </caption>
+      <colgroup>
+        <col span="2" />
+        <col class="column-border" />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead class="bg-slate-800">
+        <tr>
+          <th
+            colspan="2"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          ></th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Name
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Mass (10<sup>24</sup>kg)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Diameter (km)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Density (kg/m<sup>3</sup>)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Gravity (m/s<sup>2</sup>)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Length of day (hours)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Distance from Sun (10<sup>6</sup>km)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Mean temperature (°C)
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Number of moons
+          </th>
+          <th
+            scope="col"
+            class="p-3 border border-slate-700 text-xs uppercase tracking-wider text-cyan-400 text-center"
+          >
+            Notes
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            rowspan="4"
+            colspan="2"
+            scope="rowgroup"
+            class="p-3 border border-slate-700 text-center font-bold text-xs uppercase tracking-wider text-slate-400 bg-slate-800/70 align-middle"
+          >
+            Terrestrial planets
+          </th>
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Mercury
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            0.330
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            4,879
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            5427
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            3.7
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            4222.6
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            57.9
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            167
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            0
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            Closest to the Sun
+          </td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Venus
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            4.87
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            12,104
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            5243
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            8.9
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            2802.0
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            108.2
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            464
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            0
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center text-slate-400"
+          ></td>
+        </tr>
+        <tr
+          class="bg-emerald-950/30 hover:bg-emerald-900/40 transition-colors duration-200"
+        >
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-bold text-emerald-400 bg-slate-800/40"
+          >
+            Earth
+          </th>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            5.97
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            12,756
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            5514
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            9.8
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            24.0
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            149.6
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            15
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            1
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center font-medium text-slate-200"
+          >
+            Our world
+          </td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Mars
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            0.642
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            6,792
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            3933
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            3.7
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            24.7
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            227.9
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            -65
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            2
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            The red planet
+          </td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            rowspan="4"
+            scope="rowgroup"
+            class="p-3 border border-slate-700 text-center font-bold text-xs uppercase tracking-wider text-slate-400 bg-slate-800/70 align-middle"
+          >
+            Jovian planets
+          </th>
+          <th
+            rowspan="2"
+            scope="rowgroup"
+            class="p-3 border border-slate-700 text-center font-bold text-xs uppercase tracking-wider text-slate-400 bg-slate-800/70 align-middle"
+          >
+            Gas giants
+          </th>
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Jupiter
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            1898
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            142,984
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            1326
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            23.1
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            9.9
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            778.6
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            -110
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            67
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            The largest planet
+          </td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Saturn
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            568
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            120,536
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            687
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            9.0
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            10.7
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            1433.5
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            -140
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            62
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center text-slate-400"
+          ></td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            rowspan="2"
+            scope="rowgroup"
+            class="p-3 border border-slate-700 text-center font-bold text-xs uppercase tracking-wider text-slate-400 bg-slate-800/70 align-middle"
+          >
+            Ice giants
+          </th>
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Uranus
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            86.8
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            51,118
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            1271
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            8.7
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            17.2
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            2872.5
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            -195
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            27
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center text-slate-400"
+          ></td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Neptune
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            102
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            49,528
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            1638
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            11.0
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            16.1
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            4495.1
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            -200
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            14
+          </td>
+          <td
+            class="p-3 border border-slate-700 text-center text-slate-400"
+          ></td>
+        </tr>
+        <tr class="hover:bg-slate-800/60 transition-colors duration-200">
+          <th
+            colspan="2"
+            scope="rowgroup"
+            class="p-3 border border-slate-700 text-center font-bold text-xs uppercase tracking-wider text-slate-400 bg-slate-800/70 align-middle"
+          >
+            Dwarf planets*
+          </th>
+          <th
+            scope="row"
+            class="p-3 border border-slate-700 text-left font-medium text-slate-200 bg-slate-800/40"
+          >
+            Pluto
+          </th>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            0.0146
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            2,370
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            2095
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            0.7
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            153.3
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            5906.4
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            -225
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            5
+          </td>
+          <td class="p-3 border border-slate-700 text-center text-slate-400">
+            Declassified as a planet in 2006, but this
+            <a
+              href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/"
+              >remains controversial</a
+            >.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
